@@ -26,9 +26,15 @@ const MOCK_SCHEDULES = [
 
 function gradientBg() {
   return (
-    <div className="fixed inset-0 -z-0">
+    <div className="fixed inset-0 -z-10 pointer-events-none">
       <div className="absolute inset-0 bg-gradient-to-br from-green-100 via-emerald-50 to-lime-100" />
-      <div className="absolute inset-0 opacity-60 pointer-events-none" style={{ backgroundImage: 'radial-gradient(800px 400px at 10% 10%, rgba(16,185,129,0.15), transparent), radial-gradient(600px 300px at 90% 20%, rgba(101,163,13,0.12), transparent), radial-gradient(700px 350px at 30% 80%, rgba(16,185,129,0.12), transparent)' }} />
+      <div
+        className="absolute inset-0 opacity-60"
+        style={{
+          backgroundImage:
+            'radial-gradient(800px 400px at 10% 10%, rgba(16,185,129,0.15), transparent), radial-gradient(600px 300px at 90% 20%, rgba(101,163,13,0.12), transparent), radial-gradient(700px 350px at 30% 80%, rgba(16,185,129,0.12), transparent)'
+        }}
+      />
     </div>
   );
 }
